@@ -143,3 +143,15 @@ function numPointsScored(playerName) {
 }
 
 console.log(numPointsScored("Alan Anderson"));
+
+function shoeSize(playerName) {
+    const game = gameObject();
+
+    if (game['home']['players'][playerName]) {
+        return game['home']['players'][playerName]['shoe']
+    } 
+    else if (game['away']['players'][playerName]) {
+        return game['away']['players'][playerName]['shoe']
+}
+}
+console.log(shoeSize("Alan Anderson"));
