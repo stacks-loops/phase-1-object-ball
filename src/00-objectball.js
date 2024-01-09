@@ -131,10 +131,15 @@ function homeTeamName() {
 
 // let finalObject = Object.keys(gameObject());
 
-let numPointsScored() = {
-    gameObject()
+function numPointsScored(playerName) {
+    const game = gameObject();
 
+    if (game['home']['players'][playerName]) {
+        return game['home']['players'][playerName]['points']
+    } 
+    else if (game['away']['players'][playerName]) {
+        return game['away']['players'][playerName]['points']
+}
 }
 
-
-
+console.log(numPointsScored("Alan Anderson"));
