@@ -121,5 +121,20 @@ function gameObject() {
     }
 return game;
 }
+// console log game object to ensure it is running
+// console.log(gameObject())
 
-console.log(gameObject())
+function homeTeamName() {
+    let object = gameObject()
+    return object["home"]["teamName"]
+}
+
+// let finalObject = Object.keys(gameObject());
+
+let numPointsScored() = {
+    gameObject()
+
+}
+
+
+
