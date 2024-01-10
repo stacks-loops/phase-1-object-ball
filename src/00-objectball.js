@@ -155,3 +155,26 @@ function shoeSize(playerName) {
 }
 }
 console.log(shoeSize("Alan Anderson"));
+
+function teamColors(teamName) {
+    const game = gameObject();
+    return game[teamName]['colors']
+}
+
+console.log(teamColors('home'));
+
+function teamNames() {
+const teams = []
+const game = gameObject();
+teams.push(game['home']['teamName'])
+teams.push(game['away']['teamName'])
+return teams
+}
+
+console.log(teamNames())
+
+function playerNumbers(teamName) {
+  const jerseyNumbers = []
+  const game = gameObject();
+  for in ..
+}
