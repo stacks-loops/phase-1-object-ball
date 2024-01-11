@@ -185,8 +185,21 @@ function playerNumbers(teamName) {
     else if (game['away']['teamName'] == teamName) {
         const players = Object.values(game.away.teamName)
         return map.players(e => e.number)
-        
+
 }
 }
 
-console.log(playerNumbers('Brooklyn Nets'))
+// console.log(playerNumbers('Brooklyn Nets'))
+
+function playerStats(playerName) {
+
+    const game = gameObject();
+    if (game['home']['players'][playerName]){
+        return (game['home']['players'][playerName]) 
+
+}
+    else if (game['away']['players'][playerName]) {
+        return game['away']['players'][playerName];
+  }
+}
+console.log((playerStats("Alan Anderson")))
