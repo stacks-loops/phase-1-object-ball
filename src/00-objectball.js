@@ -191,12 +191,15 @@ function playerNumbers(teamName) {
 
 // console.log(playerNumbers('Brooklyn Nets'))
 
-function playerStats(playerName){
-    const game = gameObject()
-    if (game['home']['teamName'][playerName] == playerName){
-        return game['home']['teamName'][playerName]
-        
-    }
+function playerStats(playerName) {
+
+    const game = gameObject();
+    if (game['home']['players'][playerName]){
+        return (game['home']['players'][playerName]) 
     
 }
-console.log(playerStats("Alan Anderson"))
+    else if (game['away']['players'][playerName]) {
+        return game['away']['players'][playerName];
+  }
+}
+console.log((playerStats("Alan Anderson")))
